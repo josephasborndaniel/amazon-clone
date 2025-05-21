@@ -12,16 +12,16 @@ function CheckoutProduct({ id, image, title, price, rating, index }) {
   };
 
   return (
-    <div className="flex mb-5">
-      <img className="object-contain w-44 h-44" src={image} alt={title} />
+    <div className="flex flex-col  m-4 md:flex-row mb-5 bg-gray-50 border border-gray-300 rounded-lg p-4 items-center justify-center">
+      <img className="object-contain w-full md:w-44 h-44 rounded-md" src={image} alt={title} />
 
-      <div className="pl-5">
+      <div className="pl-0 md:pl-5 mt-4 md:mt-0 text-center md:text-left flex-1">
         <p className="text-lg font-bold">{title}</p>
         <p className="mt-1">
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <div className="flex mt-2 space-x-1 text-yellow-500">
+        <div className="flex justify-center md:justify-start mt-2 space-x-1 text-yellow-500">
           {Array(rating).fill().map((_, i) => (
             <p key={i}>⭐</p>
           ))}

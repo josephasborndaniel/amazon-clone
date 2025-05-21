@@ -28,7 +28,7 @@ function Header() {
             <SearchIcon className="p-[5px] h-[26px] bg-[#cd9042]" />
        </div>
        <div className=" flex justify-evenly">
-        <Link to ={!user && 'login'}>
+        <Link to={!user ? '/login' : '#'}>
         <div className=" flex flex-col mx-[10px] text-white " onClick={handelAuthentication}>
           <span className='text-[10px] '>Hellow_Guest</span>
           <span className='header_optionLineTwo' >{user? 'sign out':'sign In'}</span>

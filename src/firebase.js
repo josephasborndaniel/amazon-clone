@@ -4,14 +4,15 @@ import "firebase/compat/auth";
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA6ewtlFPiHacRigYpwHW_FXuBXtbQq1II",
-  authDomain: "fir-2d826.firebaseapp.com",
-  projectId: "fir-2d826",
-  storageBucket: "fir-2d826.appspot.com",
-  messagingSenderId: "1066700261073",
-  appId: "1:1066700261073:web:556dc35492f86a71c727f0",
-  measurementId: "G-6VYBM884RV"
+  apiKey: "AIzaSyBn_EKXXW_T6aeLn4Vr6BtZSPcdjOZIHgY",
+  authDomain: "challenge-364d4.firebaseapp.com",
+  projectId: "challenge-364d4",
+  storageBucket: "challenge-364d4.firebasestorage.app",
+  messagingSenderId: "738416627199",
+  appId: "1:738416627199:web:96c36aac72c915138cabca",
+  measurementId: "G-NT7QDGDSFV"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
