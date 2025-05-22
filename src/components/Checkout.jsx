@@ -24,6 +24,7 @@ function Checkout() {
 
 <div className="w-4/10 border-gray-500">
     {basket.map((item, index) =>(<CheckoutProduct
+    key={item.id}
     id ={item.id}
     title={item.title}
     price={item.price}

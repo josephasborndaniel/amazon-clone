@@ -7,6 +7,12 @@ import Login from './components/Login'
 import { auth } from './firebase'
 import { useStateValue } from './components/StateProvider'
 import Payment from './components/Payment'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsConditions from './pages/TermsConditions'
+import CancellationRefund from './pages/CancellationRefund'
+import ShippingDelivery from './pages/ShippingDelivery'
+import ContactUs from './pages/ContactUs'
+import Footer from './components/Footer'
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -41,6 +47,7 @@ function App() {
             <>
               <Header />
               <Home />
+              <Footer />
             </>
           }
         />
@@ -50,6 +57,7 @@ function App() {
             <>
               <Header />
               <Checkout />
+              <Footer />
             </>
           }
         />
@@ -59,6 +67,7 @@ function App() {
           element={
             <>
               <Login />
+              <Footer />
             </>
           }
         />
@@ -68,6 +77,52 @@ function App() {
             <>
               <Header />
               <Payment />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/privacy"
+          element={
+            <>
+              <Header />
+              <PrivacyPolicy />
+            </>
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <>
+              <Header />
+              <TermsConditions />
+            </>
+          }
+        />
+        <Route
+          path="/refund"
+          element={
+            <>
+              <Header />
+              <CancellationRefund />
+            </>
+          }
+        />
+        <Route
+          path="/shipping"
+          element={
+            <>
+              <Header />
+              <ShippingDelivery />
+            </>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Header />
+              <ContactUs />
             </>
           }
         />

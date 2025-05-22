@@ -18,10 +18,10 @@ function Subtotal() {
           <strong>
             <CurrencyInput
               value={totalPrice}
-              prefix="$"
+              prefix="₹"
               decimalsLimit={2}
               readOnly
-              intlConfig={{ locale: 'en-US', currency: 'USD' }}
+              intlConfig={{ locale: 'en-IN', currency: 'INR' }}
               className="bg-transparent border-none text-lg font-semibold"
             />
           </strong>

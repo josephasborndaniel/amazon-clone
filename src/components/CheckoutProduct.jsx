@@ -18,7 +18,7 @@ function CheckoutProduct({ id, image, title, price, rating, index }) {
       <div className="pl-0 md:pl-5 mt-4 md:mt-0 text-center md:text-left flex-1">
         <p className="text-lg font-bold">{title}</p>
         <p className="mt-1">
-          <small>$</small>
+          <small>₹</small>
           <strong>{price}</strong>
         </p>
         <div className="flex justify-center md:justify-start mt-2 space-x-1 text-yellow-500">
