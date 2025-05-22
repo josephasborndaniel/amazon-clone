@@ -30,7 +30,7 @@ function Header() {
        <div className=" flex justify-evenly">
         <Link to={!user ? '/login' : '#'}>
         <div className=" flex flex-col mx-[10px] text-white " onClick={handelAuthentication}>
-          <span className='text-[10px] '>Hellow_Guest</span>
+          <span className='text-[10px] '>Hellow {!user ? 'Guest': user.email}</span>
           <span className='header_optionLineTwo' >{user? 'sign out':'sign In'}</span>
         </div>
         </Link>
