@@ -28,7 +28,7 @@ function Product({ id, title, image, price, rating }) {
   <div className="mt-4">
     <p className="text-lg font-semibold text-gray-800">{title}</p>
     <p className="text-gray-600 mt-1">
-      <small>$</small>
+      <small>₹</small>
       <strong>{price}</strong>
     </p>
     <div className="flex mt-2 space-x-1 text-yellow-500">
